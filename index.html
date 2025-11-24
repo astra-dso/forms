@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Link Gateway Astra Daihatsu</title>
 
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
@@ -22,7 +23,7 @@
     </script>
 
     <style>
-        /* Background lembut tapi nggak alay */
+        /* Background lembut */
         .bg-pattern {
             background:
                 radial-gradient(circle at top left, rgba(59,130,246,0.20), transparent 55%),
@@ -34,7 +35,7 @@
 
 <body class="bg-pattern min-h-screen flex items-center justify-center px-4">
 
-    <div class="w-full max-w-md">
+    <div class="w-full max-w-md my-6">
         <!-- Card utama -->
         <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl border border-white/60 px-6 py-7 sm:px-8 sm:py-8">
 
@@ -42,7 +43,6 @@
             <div class="text-center mb-8">
                 <!-- Logo image -->
                 <div class="w-20 h-20 mx-auto rounded-2xl bg-white border border-gray-200 shadow-md flex items-center justify-center overflow-hidden">
-                    <!-- GANTI src DENGAN URL LOGO SEBENARNYA -->
                     <img src="https://raw.githubusercontent.com/Farhan231576/Tools/main/logo-dso.png"
                          alt="Astra Daihatsu"
                          class="max-w-[80%] max-h-[80%] object-contain">
@@ -54,14 +54,19 @@
                     Link Gateway
                 </h1>
                 <p class="text-gray-500 text-sm mt-1">
-                    Akses cepat link submit PMK, PKB, dan PTK 2026.
+                    Akses cepat link submit dan monitoring PMK, PKB, dan PTK 2026.
                 </p>
             </div>
 
             <!-- Divider tipis -->
-            <div class="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mb-6"></div>
+            <div class="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent mb-4"></div>
 
-            <!-- Links -->
+            <!-- Label section submit -->
+            <p class="text-[11px] font-semibold tracking-[0.16em] text-gray-500 uppercase mb-3">
+                Submit Forms
+            </p>
+
+            <!-- Links SUBMIT -->
             <div class="space-y-4">
 
                 <!-- PMK -->
@@ -79,13 +84,13 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-gray-800 font-semibold">MS Forms PMK</div>
+                                <div class="text-gray-800 font-semibold text-sm sm:text-base">MS Forms PMK</div>
                                 <div class="text-gray-500 text-xs sm:text-sm">
                                     Pemberitahuan Mutasi Karyawan
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-1 text-accentRed text-sm font-medium">
+                        <div class="flex items-center gap-1 text-accentRed text-xs sm:text-sm font-medium">
                             <span class="hidden sm:inline">Buka</span>
                             <span class="group-hover:translate-x-0.5 transition-transform">→</span>
                         </div>
@@ -106,13 +111,13 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-gray-800 font-semibold">MS Forms PKB</div>
+                                <div class="text-gray-800 font-semibold text-sm sm:text-base">MS Forms PKB</div>
                                 <div class="text-gray-500 text-xs sm:text-sm">
                                     Pengajuan Karyawan Baru
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-1 text-accentRed text-sm font-medium">
+                        <div class="flex items-center gap-1 text-accentRed text-xs sm:text-sm font-medium">
                             <span class="hidden sm:inline">Buka</span>
                             <span class="group-hover:translate-x-0.5 transition-transform">→</span>
                         </div>
@@ -133,14 +138,109 @@
                                 </svg>
                             </div>
                             <div>
-                                <div class="text-gray-800 font-semibold">MS Forms PTK</div>
+                                <div class="text-gray-800 font-semibold text-sm sm:text-base">MS Forms PTK</div>
                                 <div class="text-gray-500 text-xs sm:text-sm">
                                     Permintaan Tenaga Kerja
                                 </div>
                             </div>
                         </div>
-                        <div class="flex items-center gap-1 text-accentRed text-sm font-medium">
+                        <div class="flex items-center gap-1 text-accentRed text-xs sm:text-sm font-medium">
                             <span class="hidden sm:inline">Buka</span>
+                            <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Divider antara submit & monitoring -->
+            <div class="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-7"></div>
+
+            <!-- Label section monitoring -->
+            <p class="text-[11px] font-semibold tracking-[0.16em] text-accentRed uppercase mb-3 text-center">
+                Monitoring Progress
+            </p>
+
+            <!-- Links MONITORING -->
+            <div class="space-y-4">
+
+                <!-- Monitoring PMK -->
+                <a href="https://bit.ly/DSO-PMKProgress2026" class="group block" target="_blank">
+                    <div class="flex items-center justify-between bg-white rounded-xl border border-gray-200/80 p-4 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-accentRed/10 text-accentRed flex items-center justify-center rounded-xl group-hover:bg-accentRed/15 transition">
+                                <!-- Icon chart -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="1.5"
+                                          d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-800 font-semibold text-sm sm:text-base">Monitoring PMK</div>
+                                <div class="text-gray-500 text-xs sm:text-sm">
+                                    Progress Pemberitahuan Mutasi Karyawan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1 text-accentRed text-xs sm:text-sm font-medium">
+                            <span class="hidden sm:inline">Lihat</span>
+                            <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Monitoring PKB -->
+                <a href="https://bit.ly/DSO-PKBProgress2026" class="group block" target="_blank">
+                    <div class="flex items-center justify-between bg-white rounded-xl border border-gray-200/80 p-4 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-accentRed/10 text-accentRed flex items-center justify-center rounded-xl group-hover:bg-accentRed/15 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="1.5"
+                                          d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-800 font-semibold text-sm sm:text-base">Monitoring PKB</div>
+                                <div class="text-gray-500 text-xs sm:text-sm">
+                                    Progress Pengajuan Karyawan Baru
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1 text-accentRed text-xs sm:text-sm font-medium">
+                            <span class="hidden sm:inline">Lihat</span>
+                            <span class="group-hover:translate-x-0.5 transition-transform">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Monitoring PTK -->
+                <a href="https://bit.ly/DSO-PTKProgress2026" class="group block" target="_blank">
+                    <div class="flex items-center justify-between bg-white rounded-xl border border-gray-200/80 p-4 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-accentRed/10 text-accentRed flex items-center justify-center rounded-xl group-hover:bg-accentRed/15 transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="1.5"
+                                          d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-800 font-semibold text-sm sm:text-base">Monitoring PTK</div>
+                                <div class="text-gray-500 text-xs sm:text-sm">
+                                    Progress Permintaan Tenaga Kerja
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-1 text-accentRed text-xs sm:text-sm font-medium">
+                            <span class="hidden sm:inline">Lihat</span>
                             <span class="group-hover:translate-x-0.5 transition-transform">→</span>
                         </div>
                     </div>
