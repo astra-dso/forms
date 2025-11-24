@@ -34,7 +34,7 @@
 
 <body class="bg-pattern min-h-screen flex items-center justify-center px-4">
 
-    <div class="w-full max-w-3xl my-10">
+    <div class="w-full max-w-4xl my-10">
         <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl border border-white/60 px-6 py-8 sm:px-10">
 
             <!-- Header -->
@@ -55,125 +55,168 @@
                 </p>
             </div>
 
-            <!-- Submit Section -->
-            <p class="text-[11px] font-semibold tracking-[0.16em] text-gray-500 uppercase mb-3">
-                Submit Forms
-            </p>
+            <!-- Grid utama: kiri = submit, kanan = monitoring -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <!-- GRID SUBMIT (2 kolom desktop, 1 kolom mobile) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                <!-- ===== KIRI: SUBMIT FORMS ===== -->
+                <div>
+                    <p class="text-[11px] font-semibold tracking-[0.16em] text-gray-500 uppercase mb-3">
+                        Submit Forms
+                    </p>
 
-                <!-- PMK -->
-                <a href="https://bit.ly/DSO-PMK2026"
-                    target="_blank"
-                    class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-mainBlue/10 text-mainBlue rounded-xl flex items-center justify-center group-hover:bg-mainBlue/15 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7.5h18M3 12h12M3 16.5h6" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-gray-800 font-semibold">MS Forms PMK</div>
-                            <div class="text-gray-500 text-xs">Pemberitahuan Mutasi</div>
-                        </div>
+                    <div class="space-y-4">
+
+                        <!-- PMK -->
+                        <a href="https://bit.ly/DSO-PMK2026"
+                           target="_blank"
+                           class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-mainBlue/10 text-mainBlue rounded-xl flex items-center justify-center group-hover:bg-mainBlue/15 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 7.5h18M3 12h12M3 16.5h6" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-gray-800 font-semibold text-sm sm:text-base">
+                                        MS Forms PMK
+                                    </div>
+                                    <div class="text-gray-500 text-xs sm:text-sm">
+                                        Pemberitahuan Mutasi Karyawan
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PKB -->
+                        <a href="https://bit.ly/DSO-PKB2026"
+                           target="_blank"
+                           class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-mainBlue/10 text-mainBlue rounded-xl flex items-center justify-center group-hover:bg-mainBlue/15 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M12 6v12m-6-6h12" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-gray-800 font-semibold text-sm sm:text-base">
+                                        MS Forms PKB
+                                    </div>
+                                    <div class="text-gray-500 text-xs sm:text-sm">
+                                        Pengajuan Karyawan Baru
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PTK -->
+                        <a href="https://bit.ly/DSO-PTK2026"
+                           target="_blank"
+                           class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-mainBlue/10 text-mainBlue rounded-xl flex items-center justify-center group-hover:bg-mainBlue/15 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M5 12h14M5 12l4-4m-4 4 4 4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-gray-800 font-semibold text-sm sm:text-base">
+                                        MS Forms PTK
+                                    </div>
+                                    <div class="text-gray-500 text-xs sm:text-sm">
+                                        Permintaan Tenaga Kerja
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
                     </div>
-                </a>
+                </div>
 
-                <!-- PKB -->
-                <a href="https://bit.ly/DSO-PKB2026"
-                    target="_blank"
-                    class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-mainBlue/10 text-mainBlue rounded-xl flex items-center justify-center group-hover:bg-mainBlue/15 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v12m-6-6h12" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-gray-800 font-semibold">MS Forms PKB</div>
-                            <div class="text-gray-500 text-xs">Pengajuan Karyawan Baru</div>
-                        </div>
+                <!-- ===== KANAN: MONITORING ===== -->
+                <div>
+                    <p class="text-[11px] font-semibold tracking-[0.16em] text-accentRed uppercase mb-3">
+                        Monitoring Progress
+                    </p>
+
+                    <div class="space-y-4">
+
+                        <!-- Monitoring PMK -->
+                        <a href="https://bit.ly/DSO-PMKProgress2026"
+                           target="_blank"
+                           class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-accentRed/10 text-accentRed rounded-xl flex items-center justify-center group-hover:bg-accentRed/15 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-gray-800 font-semibold text-sm sm:text-base">
+                                        Monitoring PMK
+                                    </div>
+                                    <div class="text-gray-500 text-xs sm:text-sm">
+                                        Progress Pemberitahuan Mutasi
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Monitoring PKB -->
+                        <a href="https://bit.ly/DSO-PKBProgress2026"
+                           target="_blank"
+                           class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-accentRed/10 text-accentRed rounded-xl flex items-center justify-center group-hover:bg-accentRed/15 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-gray-800 font-semibold text-sm sm:text-base">
+                                        Monitoring PKB
+                                    </div>
+                                    <div class="text-gray-500 text-xs sm:text-sm">
+                                        Progress Pengajuan Karyawan Baru
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Monitoring PTK -->
+                        <a href="https://bit.ly/DSO-PTKProgress2026"
+                           target="_blank"
+                           class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:-translate-y-[1px] transition-all">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-accentRed/10 text-accentRed rounded-xl flex items-center justify-center group-hover:bg-accentRed/15 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7"
+                                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-gray-800 font-semibold text-sm sm:text-base">
+                                        Monitoring PTK
+                                    </div>
+                                    <div class="text-gray-500 text-xs sm:text-sm">
+                                        Progress Permintaan Tenaga Kerja
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
                     </div>
-                </a>
-
-                <!-- PTK -->
-                <a href="https://bit.ly/DSO-PTK2026"
-                    target="_blank"
-                    class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-mainBlue/10 text-mainBlue rounded-xl flex items-center justify-center group-hover:bg-mainBlue/15 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14M5 12l4-4m-4 4 4 4" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-gray-800 font-semibold">MS Forms PTK</div>
-                            <div class="text-gray-500 text-xs">Permintaan Tenaga Kerja</div>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
-
-            <!-- Monitoring Section -->
-            <p class="text-[11px] font-semibold tracking-[0.16em] text-accentRed uppercase mb-3 text-center">
-                Monitoring Progress
-            </p>
-
-            <!-- GRID MONITORING -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-
-                <!-- Monitoring PMK -->
-                <a href="https://bit.ly/DSO-PMKProgress2026"
-                    target="_blank"
-                    class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-accentRed/10 text-accentRed rounded-xl flex items-center justify-center group-hover:bg-accentRed/15 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3v18h18M7 14l3 3 4-5 3 4" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-gray-800 font-semibold">Monitoring PMK</div>
-                            <div class="text-gray-500 text-xs">Progress Mutasi</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Monitoring PKB -->
-                <a href="https://bit.ly/DSO-PKBProgress2026"
-                    target="_blank"
-                    class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-accentRed/10 text-accentRed rounded-xl flex items-center justify-center group-hover:bg-accentRed/15 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3v18h18M7 14l3 3 4-5 3 4" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-gray-800 font-semibold">Monitoring PKB</div>
-                            <div class="text-gray-500 text-xs">Progress Pengajuan Baru</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Monitoring PTK -->
-                <a href="https://bit.ly/DSO-PTKProgress2026"
-                    target="_blank"
-                    class="group block bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md transition-all">
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-accentRed/10 text-accentRed rounded-xl flex items-center justify-center group-hover:bg-accentRed/15 transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3v18h18M7 14l3 3 4-5 3 4" />
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="text-gray-800 font-semibold">Monitoring PTK</div>
-                            <div class="text-gray-500 text-xs">Progress Tenaga Kerja</div>
-                        </div>
-                    </div>
-                </a>
+                </div>
 
             </div>
 
