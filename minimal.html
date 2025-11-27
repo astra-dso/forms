@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gateway - Minimal</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- header -->
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-2">
+                <img src="https://raw.githubusercontent.com/Farhan231576/Tools/main/logo-dso.png"
+                     alt="Astra Daihatsu" class="h-8 w-8 object-contain">
+                <div>
+                    <p class="text-[11px] uppercase tracking-[0.18em] text-slate-500 font-semibold">
+                        DSO HR • ROD
+                    </p>
+                    <p class="text-xs text-slate-500">Gateway PMK • PKB • PTK 2026</p>
+                </div>
+            </div>
+            <span class="text-[11px] text-slate-400">
+                Internal Use Only
+            </span>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- hero -->
+        <section class="mb-8">
+            <h1 class="text-3xl font-semibold tracking-tight text-slate-900 mb-2">
+                Link Gateway Astra Daihatsu
+            </h1>
+            <p class="text-sm text-slate-600 max-w-2xl">
+                Portal sederhana untuk mengakses form dan monitoring proses PMK, PKB, dan PTK
+                dalam satu halaman, tanpa dekorasi berlebihan.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-3 text-[11px] text-slate-500">
+                <span>Periode dummy: Jan – Des 2026</span>
+                <span class="hidden sm:inline">•</span>
+                <span>PIC HR dummy: Andi HRBP</span>
+            </div>
+        </section>
+
+        <!-- split -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- submit -->
+            <div>
+                <h2 class="text-xs font-semibold tracking-[0.18em] text-slate-500 uppercase mb-3">
+                    Submit Forms
+                </h2>
+
+                <div class="space-y-3">
+                    <!-- PMK -->
+                    <a href="https://bit.ly/DSO-PMK2026" target="_blank"
+                       class="block border border-slate-200 rounded-xl px-4 py-3 hover:border-slate-400 hover:bg-slate-50 transition">
+                        <p class="text-sm font-semibold text-slate-900">MS Forms PMK</p>
+                        <p class="text-xs text-slate-500">Pemberitahuan Mutasi Karyawan</p>
+                        <p class="mt-1 text-[11px] text-slate-500">
+                            Dummy note: gunakan untuk mutasi / promosi internal.
+                        </p>
+                    </a>
+
+                    <!-- PKB -->
+                    <a href="https://bit.ly/DSO-PKB2026" target="_blank"
+                       class="block border border-slate-200 rounded-xl px-4 py-3 hover:border-slate-400 hover:bg-slate-50 transition">
+                        <p class="text-sm font-semibold text-slate-900">MS Forms PKB</p>
+                        <p class="text-xs text-slate-500">Pengajuan Karyawan Baru</p>
+                        <p class="mt-1 text-[11px] text-slate-500">
+                            Dummy: ajukan kebutuhan posisi baru atau replacement.
+                        </p>
+                    </a>
+
+                    <!-- PTK -->
+                    <a href="https://bit.ly/DSO-PTK2026" target="_blank"
+                       class="block border border-slate-200 rounded-xl px-4 py-3 hover:border-slate-400 hover:bg-slate-50 transition">
+                        <p class="text-sm font-semibold text-slate-900">MS Forms PTK</p>
+                        <p class="text-xs text-slate-500">Permintaan Tenaga Kerja</p>
+                        <p class="mt-1 text-[11px] text-slate-500">
+                            Dummy: permintaan tenaga kerja tambahan.
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- monitoring -->
+            <div>
+                <h2 class="text-xs font-semibold tracking-[0.18em] text-slate-500 uppercase mb-3">
+                    Monitoring
+                </h2>
+
+                <div class="space-y-3">
+                    <!-- PMK -->
+                    <a href="https://bit.ly/DSO-PMKProgress2026" target="_blank"
+                       class="block border border-slate-200 rounded-xl px-4 py-3 hover:border-slate-400 hover:bg-slate-50 transition">
+                        <p class="text-sm font-semibold text-slate-900">Monitoring PMK</p>
+                        <p class="text-xs text-slate-500">Progress Pemberitahuan Mutasi</p>
+                        <p class="mt-1 text-[11px] text-slate-500">
+                            Dummy: menampilkan status per-outlet.
+                        </p>
+                    </a>
+
+                    <!-- PKB -->
+                    <a href="https://bit.ly/DSO-PKBProgress2026" target="_blank"
+                       class="block border border-slate-200 rounded-xl px-4 py-3 hover:border-slate-400 hover:bg-slate-50 transition">
+                        <p class="text-sm font-semibold text-slate-900">Monitoring PKB</p>
+                        <p class="text-xs text-slate-500">Pengajuan Karyawan Baru</p>
+                        <p class="mt-1 text-[11px] text-slate-500">
+                            Dummy: overview jumlah request & status.
+                        </p>
+                    </a>
+
+                    <!-- PTK -->
+                    <a href="https://bit.ly/DSO-PTKProgress2026" target="_blank"
+                       class="block border border-slate-200 rounded-xl px-4 py-3 hover:border-slate-400 hover:bg-slate-50 transition">
+                        <p class="text-sm font-semibold text-slate-900">Monitoring PTK</p>
+                        <p class="text-xs text-slate-500">Permintaan Tenaga Kerja</p>
+                        <p class="mt-1 text-[11px] text-slate-500">
+                            Dummy: status posisi yang sedang dicari.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ simpel -->
+        <section class="border-t border-slate-200 pt-4">
+            <h2 class="text-xs font-semibold tracking-[0.18em] text-slate-500 uppercase mb-3">
+                FAQ Singkat (dummy)
+            </h2>
+            <div class="space-y-2 text-[11px] text-slate-600">
+                <p><span class="font-semibold">Siapa yang mengisi form?</span> Kepala outlet / PIC SDM di outlet.</p>
+                <p><span class="font-semibold">Revisi data?</span> Hubungi PIC HR selama periode masih terbuka.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 mt-4">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <p class="text-[11px] text-slate-400 text-center">
+                &copy; <span id="year-min"></span> Astra Daihatsu • DSO HR
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year-min').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
