@@ -1,1 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gateway - Glassmorphism</title>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainBlue: "#38BDF8",
+                        accentRed: "#F97373"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background:
+                radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(244,63,94,0.25), transparent 55%),
+                #020617;
+        }
+        .glass {
+            background: linear-gradient(135deg, rgba(15,23,42,0.92), rgba(30,64,175,0.7));
+            backdrop-filter: blur(22px);
+        }
+        .glass-soft {
+            background: linear-gradient(135deg, rgba(15,23,42,0.85), rgba(37,99,235,0.5));
+            backdrop-filter: blur(18px);
+        }
+        .glass-light {
+            background: linear-gradient(135deg, rgba(15,23,42,0.7), rgba(56,189,248,0.35));
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center px-4 py-8 text-slate-100">
+    <div class="w-full max-w-6xl mx-auto">
+        <!-- header -->
+        <header class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 mb-6">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 shadow-md flex items-center justify-center">
+                    <img src="https://raw.githubusercontent.com/Farhan231576/Tools/main/logo-dso.png"
+                         alt="Astra Daihatsu" class="max-w-[80%] max-h-[80%] object-contain">
+                </div>
+                <div>
+                    <p class="text-[11px] tracking-[0.25em] uppercase text-mainBlue font-semibold">
+                        DSO HR • ROD
+                    </p>
+                    <p class="text-xs text-slate-300">Gateway PMK • PKB • PTK 2026</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2">
+                <span class="inline-flex items-center rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-400/40 px-3 py-1 text-[11px] font-medium">
+                    <span class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-1.5"></span>
+                    Live Portal
+                </span>
+                <span class="inline-flex items-center rounded-full bg-white/5 text-slate-200 border border-white/10 px-3 py-1 text-[11px]">
+                    Internal Only
+                </span>
+            </div>
+        </header>
+
+        <!-- main glass -->
+        <main class="glass rounded-3xl shadow-2xl border border-white/10 px-6 py-7 md:px-10 md:py-9">
+            <!-- hero -->
+            <section class="mb-7">
+                <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+                    <div class="flex-1">
+                        <h1 class="text-3xl md:text-4xl font-semibold tracking-tight text-white mb-2">
+                            Link Gateway Astra Daihatsu
+                        </h1>
+                        <p class="text-sm md:text-[15px] text-slate-200 max-w-xl">
+                            Satu pintu untuk pengisian dan pemantauan
+                            <span class="font-semibold text-mainBlue">PMK, PKB, dan PTK 2026</span>
+                            dengan tampilan modern dan ringkas.
+                        </p>
+                        <div class="mt-4 flex flex-wrap gap-3">
+                            <div class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/15 px-3 py-1.5 text-[11px]">
+                                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                                Periode: Dummy Jan – Des 2026
+                            </div>
+                            <div class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/15 px-3 py-1.5 text-[11px]">
+                                <span class="w-2 h-2 rounded-full bg-mainBlue"></span>
+                                PIC HR: Dummy Andi HRBP
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3 w-full max-w-xs">
+                        <div class="glass-soft rounded-2xl border border-white/15 px-3 py-3">
+                            <p class="text-[10px] uppercase tracking-[0.18em] text-slate-400 font-semibold">
+                                Snapshot
+                            </p>
+                            <p class="text-xs font-semibold mt-1 text-slate-50">
+                                Dummy PMK 78% selesai
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-1">
+                                Data dari dashboard monitoring.
+                            </p>
+                        </div>
+                        <div class="glass-soft rounded-2xl border border-white/15 px-3 py-3">
+                            <p class="text-[10px] uppercase tracking-[0.18em] text-slate-400 font-semibold">
+                                Deadline
+                            </p>
+                            <p class="text-xs font-semibold mt-1 text-slate-50">
+                                Dummy 28 Feb 2026
+                            </p>
+                            <p class="text-[11px] text-slate-300 mt-1">
+                                Sesuaikan dengan kebijakan HR.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- announcement -->
+            <section class="mb-7">
+                <div class="glass-light rounded-2xl border border-cyan-400/40 px-4 py-3 flex gap-3 items-start">
+                    <div class="w-8 h-8 rounded-full bg-cyan-400/30 flex items-center justify-center text-xs font-semibold text-cyan-100">
+                        i
+                    </div>
+                    <div>
+                        <p class="text-xs font-semibold text-cyan-200 mb-1">
+                            Info Penting (dummy)
+                        </p>
+                        <p class="text-[11px] text-slate-200">
+                            Lengkapi seluruh form sebelum deadline yang ditentukan.  
+                            Monitoring akan menampilkan status per-outlet, sehingga keterlambatan terlihat jelas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- split -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-7 mb-7">
+                <!-- submit -->
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <p class="text-[11px] font-semibold tracking-[0.18em] text-cyan-300 uppercase">
+                            Submit Forms
+                        </p>
+                        <span class="text-[11px] text-slate-400">Outlet / Unit</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- PMK -->
+                        <a href="https://bit.ly/DSO-PMK2026" target="_blank"
+                           class="group block glass-soft rounded-2xl border border-white/10 p-5 shadow-lg hover:-translate-y-[1px] hover:border-cyan-400/60 transition-all">
+                            <div class="flex gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-cyan-400/20 text-cyan-200 flex items-center justify-center group-hover:bg-cyan-400/30 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 7.5h18M3 12h12M3 16.5h6" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-semibold text-white">MS Forms PMK</p>
+                                    <p class="text-xs text-slate-300">Pemberitahuan Mutasi Karyawan</p>
+                                    <p class="mt-2 text-[11px] text-slate-300">
+                                        Gunakan untuk mutasi dan promosi internal (dummy teks).
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PKB -->
+                        <a href="https://bit.ly/DSO-PKB2026" target="_blank"
+                           class="group block glass-soft rounded-2xl border border-white/10 p-5 shadow-lg hover:-translate-y-[1px] hover:border-cyan-400/60 transition-all">
+                            <div class="flex gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-cyan-400/20 text-cyan-200 flex items-center justify-center group-hover:bg-cyan-400/30 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 7.5h18M3 12h12M3 16.5h6" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-semibold text-white">MS Forms PKB</p>
+                                    <p class="text-xs text-slate-300">Pengajuan Karyawan Baru</p>
+                                    <p class="mt-2 text-[11px] text-slate-300">
+                                        Dummy: request posisi baru / replacement.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PTK -->
+                        <a href="https://bit.ly/DSO-PTK2026" target="_blank"
+                           class="group block glass-soft rounded-2xl border border-white/10 p-5 shadow-lg hover:-translate-y-[1px] hover:border-cyan-400/60 transition-all">
+                            <div class="flex gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-cyan-400/20 text-cyan-200 flex items-center justify-center group-hover:bg-cyan-400/30 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 7.5h18M3 12h12M3 16.5h6" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-semibold text-white">MS Forms PTK</p>
+                                    <p class="text-xs text-slate-300">Permintaan Tenaga Kerja</p>
+                                    <p class="mt-2 text-[11px] text-slate-300">
+                                        Dummy: permintaan tenaga kerja tambahan.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- monitoring -->
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <p class="text-[11px] font-semibold tracking-[0.18em] text-rose-300 uppercase">
+                            Monitoring
+                        </p>
+                        <span class="text-[11px] text-slate-400">HR / Management</span>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- PMK -->
+                        <a href="https://bit.ly/DSO-PMKProgress2026" target="_blank"
+                           class="group block glass-soft rounded-2xl border border-white/10 p-5 shadow-lg hover:-translate-y-[1px] hover:border-rose-400/60 transition-all">
+                            <div class="flex gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-rose-500/25 text-rose-100 flex items-center justify-center group-hover:bg-rose-500/35 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-semibold text-white">Monitoring PMK</p>
+                                    <p class="text-xs text-slate-300">Progress Mutasi</p>
+                                    <p class="mt-2 text-[11px] text-slate-300">
+                                        Dummy: 78% complete, detail by outlet di dashboard.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PKB -->
+                        <a href="https://bit.ly/DSO-PKBProgress2026" target="_blank"
+                           class="group block glass-soft rounded-2xl border border-white/10 p-5 shadow-lg hover:-translate-y-[1px] hover:border-rose-400/60 transition-all">
+                            <div class="flex gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-rose-500/25 text-rose-100 flex items-center justify-center group-hover:bg-rose-500/35 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-semibold text-white">Monitoring PKB</p>
+                                    <p class="text-xs text-slate-300">Pengajuan Karyawan Baru</p>
+                                    <p class="mt-2 text-[11px] text-slate-300">
+                                        Dummy: monitor status approval dan hiring.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- PTK -->
+                        <a href="https://bit.ly/DSO-PTKProgress2026" target="_blank"
+                           class="group block glass-soft rounded-2xl border border-white/10 p-5 shadow-lg hover:-translate-y-[1px] hover:border-rose-400/60 transition-all">
+                            <div class="flex gap-4">
+                                <div class="w-11 h-11 rounded-xl bg-rose-500/25 text-rose-100 flex items-center justify-center group-hover:bg-rose-500/35 transition">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                              d="M3 3v18h18M7 14l3 3 4-5 3 4" />
+                                    </svg>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-sm font-semibold text-white">Monitoring PTK</p>
+                                    <p class="text-xs text-slate-300">Permintaan Tenaga Kerja</p>
+                                    <p class="mt-2 text-[11px] text-slate-300">
+                                        Dummy: lihat posisi open & progress rekrutmen.
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="pt-3 border-t border-white/10">
+                <p class="text-center text-[11px] text-slate-400">
+                    &copy; <span id="year-glass"></span> Astra Daihatsu • DSO HR
+                </p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        document.getElementById('year-glass').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
